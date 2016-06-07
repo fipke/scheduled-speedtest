@@ -2,7 +2,7 @@ var fs = require('fs');
 var speedTest = require('speedtest-net');
 var schedule = require('node-schedule');
 
-var j = schedule.scheduleJob('*/30 * * * *', function(){
+var j = schedule.scheduleJob('*/2 * * * *', function(){
 
   test = speedTest({maxTime: 5000});
 
