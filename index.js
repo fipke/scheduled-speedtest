@@ -47,6 +47,7 @@ if(args.i) {
  */
 var runScheduler = function(interval) {
   open('index.html');
+  fs.unlink("data.js", function(err) { });
   console.log('Scheduler starting. First test will run in ' + interval + 'minutes.');
   nodeSchedule.scheduleJob('*/'+interval+' * * * *', function () {
     runSpeedTest();
