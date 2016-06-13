@@ -1,26 +1,44 @@
-### Speedtest every 30 min
+### Scheduled Speed Test
 
 Using a package from 
 https://github.com/ddsol/speedtest.net
 
-A very simple node script to run and record speed test data every 30 min.
+A very simple node script to run and record speed test data.
 
 ### Installation
 
 ```
 $ npm install
-$ npm run start
+```
+
+### Run
+
+```
+$ node .
+```
+
+### Help
+
+```
+$ node . -h
+```
+
+### Commands
+
+```
+// Help
+$ node . -h
+
+// Runs a default speed test of 5 minute intervals
+$ node .
+
+// Runs a once off speed test
+$ node . -i once
+
+// Sets and interval of 5 minutes
+$ node . -i 5
 ```
 
 ### Log
 
-This script records two data files, a detailed log to be located in the tests directory and a simple log that records download, upload and ping.
-
-### Generate output
-
-In order for index.html to function correctly, you should have a few log items in your log file.
-Generate the output for your graph by running
-
-```
-$ npm run generate
-```
+This script records every speed test in "log" directory.
