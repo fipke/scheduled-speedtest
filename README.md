@@ -7,6 +7,10 @@ A very simple node script to run and record speed test data.
 
 ### Installation
 
+You need to have node installed on your computer.
+If you do not have it installed, please visit the NodeJS website and install it.
+https://nodejs.org
+
 ```
 $ npm install
 ```
